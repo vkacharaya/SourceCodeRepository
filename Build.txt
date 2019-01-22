@@ -1,0 +1,69 @@
+Build Instructions for Repository_GUI.sln
+==================================================
+1. Right-Click on Repository_GUI.sln --> Properties
+2. In Start Up project tab, select Multiple start up project.
+3. Select 'Start' for 'GUI' and 'ServerPrototype'
+4. Select 'Translater' project and set Configuartion Type as 'Dynamic Library'
+5. Set other project as 'Static library'
+
+Build Instructions for Translater as standalone executable
+=======================================
+1. Right-Click on Translater and select Set as StartUp Project
+2. Set Translater to build as executable
+   a. Translater > Properties > General > Project Defaults > Configuration Type > Application (.exe)
+2. Set other project as static library
+3. Right-Click on Translater and select Build
+
+Build Instructions for FileSystem as standalone executable
+=======================================
+1. Right-Click on FileSystem and select Set as StartUp Project
+2. Set FileSystem to build as executable
+   a. FileSystem > Properties > General > Project Defaults > Configuration Type > Application (.exe)
+   b. FileSystem > Properties > C/C++ > Preprocessor > Preprocessor Definitions > TEST_FILESYSTEM;
+2. Set other project as static library
+3. Right-Click on FileSystem and select Build
+
+Build Instructions for Message as standalone executable
+=======================================
+1. Right-Click on Message and select Set as StartUp Project
+2. Set Message to build as executable
+   a. Message > Properties > General > Project Defaults > Configuration Type > Application (.exe)
+   b. Message > Properties > C/C++ > Preprocessor > Preprocessor Definitions > TEST_MESSAGE;
+2. Set other project as static library
+3. Right-Click on Message and select Build
+
+Build Instructions for MsgPassingComm as standalone executable
+=======================================
+1. Right-Click on MsgPassingComm and select Set as StartUp Project
+2. Set MsgPassingComm to build as executable
+   a. MsgPassingComm > Properties > General > Project Defaults > Configuration Type > Application (.exe)
+   b. MsgPassingComm > Properties > C/C++ > Preprocessor > Preprocessor Definitions > TEST_COMM;
+2. Set other project as static library
+3. Right-Click on MsgPassingComm and select Build
+
+
+Build Instructions for Sockets as standalone executable
+=======================================
+1. Right-Click on Sockets and select Set as StartUp Project
+2. Set Sockets to build as executable
+   a. Sockets > Properties > General > Project Defaults > Configuration Type > Application (.exe)
+   b. Sockets > Properties > C/C++ > Preprocessor > Preprocessor Definitions > TEST_SOCKETS;
+2. Set other project as static library
+3. Right-Click on Sockets and select Build
+
+
+Build Instructions for Utilities as standalone executable
+=============================================================
+1. Note that All of the Utilities in the solution's Utilities folder provide all their functionality
+   via their header files.
+2. For that reason Projects that use them don't have to build them, but simply include their header files.
+3. Right-Click on Utilities and select Set as StartUp Project
+4. Utilities > Properties > C/C++ > Preprocessor > Preprocessor Definitions > TEST_UTILITIES;
+5. Right-Click on Utilities and select Build
+
+
+
+
+
+
+

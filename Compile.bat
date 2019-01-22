@@ -1,0 +1,1 @@
+devenv RepositoryWithWPF.sln /rebuild debug
