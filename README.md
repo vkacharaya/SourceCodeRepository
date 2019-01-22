@@ -1,0 +1,12 @@
+# SourceCodeRepository
+Application to check-in and check-out files from remote client to a remote server. The files are stored in the NoSql database created by me. Implementation is done using C#, C++, C++/CLI.
+
+A Code Repository is a Program responsible for managing source code resources, e.g., files and documents. A fully developed Repository will support file persistance, managment of versions, and the acquisition and publication of source and document files. A Remote Repository adds the capability to access the Repository's functionality over a communication channel, e.g., interprocess communication, inter-network communication, and communication across the internet. 
+
+In this application, a Remote Code Repository, local Client, and communication channel that supports client access to the Repository from any internet enabled processor. 
+
+The communication channel will use sockets and support an HTTP like message structure. The channel could support: 
+* HTTP style request/response transactions 
+* One-way communication, allowing asynchronous messaging between any two endpoints that are capable of listening for connection requests and connecting to a remote listener. 
+* Transmission of byte streams that are set up with one or more negotiation messages followed by transmission of a stream of bytes of specified stream size2. 
+* One way asynchronous communication is required, and file transfer using messages with binary bodies.
